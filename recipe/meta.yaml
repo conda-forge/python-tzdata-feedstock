@@ -1,4 +1,4 @@
-{% set version = "2022.5" %}
+{% set version = "2022.6" %}
 
 package:
   name: python-tzdata
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tzdata/tzdata-{{ version }}.tar.gz
-  sha256: e15b2b3005e2546108af42a0eb4ccab4d9e225e2dfbf4f77aad50c70a4b1f3ab
+  sha256: 91f11db4503385928c15598c98573e3af07e7229181bee5375bd30f1695ddcae
 
 build:
   number: 0
