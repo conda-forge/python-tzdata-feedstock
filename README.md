@@ -9,10 +9,13 @@ Package license: Apache-2.0
 
 Summary: Provider of IANA time zone data
 
+Development: https://github.com/python/tzdata
+
+Documentation: https://tzdata.python.org/
+
 This is a Python package containing zic-compiled binaries for the IANA time zone database.
 It is intended to be a fallback for systems that do not have system time zone data installed (or don't have it installed in a standard location),
 as a part of PEP 615.
-
 
 Current build status
 ====================
