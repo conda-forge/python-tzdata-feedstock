@@ -9,10 +9,13 @@ Package license: Apache-2.0
 
 Summary: Provider of IANA time zone data
 
+Development: https://github.com/python/tzdata
+
+Documentation: https://tzdata.python.org/
+
 This is a Python package containing zic-compiled binaries for the IANA time zone database.
 It is intended to be a fallback for systems that do not have system time zone data installed (or don't have it installed in a standard location),
 as a part of PEP 615.
-
 
 Current build status
 ====================
@@ -45,31 +48,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `python-tzdata` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install python-tzdata
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install python-tzdata
 ```
 
-It is possible to list all of the versions of `python-tzdata` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add python-tzdata
+# for installing globally
+pixi global install python-tzdata
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `python-tzdata` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search python-tzdata --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search python-tzdata --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search python-tzdata --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -81,6 +126,8 @@ mamba repoquery whoneeds python-tzdata --channel conda-forge
 # List dependencies of `python-tzdata`:
 mamba repoquery depends python-tzdata --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
