@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2026.4"
+  version: "2026.5"
 
 package:
   name: python-tzdata
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/t/tzdata/tzdata-${{ version }}.tar.gz
-  sha256: f1b8bd365d8d210c55353f4d7f8d6d8561c0ba50d704b700d195a9424bba0d79
+  sha256: 8cc73c0a0bfca7dbfa59235d60b2eff82231dee33f53d206db1acd9173cfc0a7
 
 build:
   number: 0
